@@ -2,28 +2,60 @@
 
 **Protect. Strengthen. Prune your mind.**
 
-A shareable resource for understanding cognitive warfare and building personal cognitive resilience.
+A shareable resource built around a 13-part Cognitive Warfare series. Each graphic is designed for easy sharing on X, Facebook, LinkedIn, email, Instagram, Truth Social, etc.
 
-Live site: [cognitiveclarity.vercel.app](https://cognitiveclarity.vercel.app) (after Vercel deploy)
+Live site (after deploy): **https://cognitiveclarity.vercel.app**
 
-## Features
+## The Series (in order)
 
-- Clean, dark, modern design optimised for mobile and desktop
-- Shareable insight cards with one-click share to X, Facebook, LinkedIn, Email
-- Download high-quality images for Instagram / Truth Social / Stories
-- Open Graph tags so shares look good on social feeds
-- Practical daily practices section
+1. What is Cognitive Warfare  
+2. How it differs  
+3. Perception and narrative manipulation  
+4. Inducing confusion, doubt, and cognitive overload  
+5. Polarization and division amplification  
+6. Historical memory disruption and paradigm shifting  
+7. Symbol and identity deconstruction  
+8. Reflexive control and premise-setting  
+9. Technology-enabled scaling and personalization  
+10. Chinese PLA writings on “cognitive domain operations”  
+11. External actors  
+12. A leader protecting their own population  
+13. Defensive posture  
 
 ## Deploy to Vercel (2 minutes)
 
 1. Go to [vercel.com/new](https://vercel.com/new)
-2. Import the GitHub repository `Caelverum/cognitiveclarity`
-3. Framework Preset: **Other** (static)
-4. Project name: `cognitiveclarity` → this gives you `cognitiveclarity.vercel.app`
+2. Import the GitHub repo `Caelverum/cognitiveclarity`
+3. Framework Preset → **Other**
+4. Project Name → `cognitiveclarity` (this creates cognitiveclarity.vercel.app)
 5. Deploy
 
-That’s it. Every push to `main` will auto-update the live site.
+## Add the images (required)
 
-## Adding more content
+The HTML expects these files in the `/images` folder:
 
-Drop new images into `/images` and add a new card in `index.html` following the existing pattern. Keep the `data-title`, `data-text` and `data-img` attributes so the share buttons work.
+```
+cw-01.png … cw-13.png
+```
+
+**Easiest way:**
+1. Open the repo on GitHub → click **images** folder (or create it)
+2. Click **Add file → Upload files**
+3. Drag the 13 PNGs from your Google Drive folder “Brand - COGNITIVE CLA…” and rename them exactly:
+   - Cognitive Warfare 01 (what is).png → **cw-01.png**
+   - Cognitive Warfare 02 (how it differs).png → **cw-02.png**
+   - … up to cw-13.png
+4. Commit
+
+After the images are in the repo, the site will display the full ordered series with working download & share buttons.
+
+## Features
+
+- Numbered cards in the exact order you specified
+- One-click share to X / Facebook / LinkedIn / Email
+- Download button for Instagram / Truth Social / Stories
+- Native mobile share sheet
+- Open Graph tags for nice previews when the link is shared
+- Daily practices section so people keep returning
+
+Built for people who refuse to outsource their thinking.
