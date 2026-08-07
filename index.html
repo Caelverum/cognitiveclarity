@@ -66,6 +66,8 @@
     .card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 16px; overflow: hidden; transition: transform 0.2s, box-shadow 0.2s; display: flex; flex-direction: column; }
     .card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,0.4); }
     .card-img-wrap { position: relative; background: #0a0f18; }
+    .card-img-wrap a { display: block; cursor: zoom-in; }
+    .card-img-wrap a:hover img { opacity: 0.92; }
     .card-img { width: 100%; aspect-ratio: 2/3; object-fit: cover; display: block; }
     .card-num { position: absolute; top: 12px; left: 12px; background: rgba(0,0,0,0.7); color: var(--gold); font-weight: 700; font-size: 0.85rem; padding: 0.25rem 0.6rem; border-radius: 6px; letter-spacing: 0.02em; }
     .card-body { padding: 1.15rem 1.25rem 1.25rem; flex: 1; display: flex; flex-direction: column; }
@@ -154,7 +156,7 @@
     <section id="gallery">
       <div class="container">
         <h2 class="section-title">The Cognitive Warfare Series</h2>
-        <p class="section-sub">Thirteen shareable graphics in order. Each card has one-click share to X, Facebook, LinkedIn, email + download. Designed for your feed.</p>
+        <p class="section-sub">Thirteen shareable graphics in order. Each card has one-click share to X, Facebook, LinkedIn, email + download. Designed for your feed. Tap any image to open full size.</p>
 
         <div class="grid" id="share-grid">
 
@@ -162,7 +164,9 @@
           <article class="card" data-title="What is Cognitive Warfare" data-text="Cognitive Warfare 01 — What is Cognitive Warfare. Understand the foundation. cognitiveclarity.vercel.app" data-img="images/cw-01.png">
             <div class="card-img-wrap">
               <span class="card-num">01</span>
-              <img class="card-img" src="images/cw-01.png" alt="Cognitive Warfare 01 — What is" loading="lazy" />
+              <a href="images/cw-01.png" target="_blank" rel="noopener" title="Open full size to zoom / save">
+                <img class="card-img" src="images/cw-01.png" alt="Cognitive Warfare 01 — What is" loading="lazy" />
+              </a>
             </div>
             <div class="card-body">
               <h3>What is Cognitive Warfare</h3>
@@ -183,7 +187,9 @@
           <article class="card" data-title="How it Differs" data-text="Cognitive Warfare 02 — How it differs from PsyOps, InfoOps and CyOps. cognitiveclarity.vercel.app" data-img="images/cw-02.png">
             <div class="card-img-wrap">
               <span class="card-num">02</span>
-              <img class="card-img" src="images/cw-02.png" alt="Cognitive Warfare 02 — How it differs" loading="lazy" />
+              <a href="images/cw-02.png" target="_blank" rel="noopener" title="Open full size to zoom / save">
+                <img class="card-img" src="images/cw-02.png" alt="Cognitive Warfare 02 — How it differs" loading="lazy" />
+              </a>
             </div>
             <div class="card-body">
               <h3>How it Differs</h3>
@@ -204,7 +210,9 @@
           <article class="card" data-title="Perception & Narrative Manipulation" data-text="Cognitive Warfare 03 — Perception and narrative manipulation. cognitiveclarity.vercel.app" data-img="images/cw-03.png">
             <div class="card-img-wrap">
               <span class="card-num">03</span>
-              <img class="card-img" src="images/cw-03.png" alt="Cognitive Warfare 03 — Perception and narrative manipulation" loading="lazy" />
+              <a href="images/cw-03.png" target="_blank" rel="noopener" title="Open full size to zoom / save">
+                <img class="card-img" src="images/cw-03.png" alt="Cognitive Warfare 03 — Perception and narrative manipulation" loading="lazy" />
+              </a>
             </div>
             <div class="card-body">
               <h3>Perception & Narrative Manipulation</h3>
@@ -225,7 +233,9 @@
           <article class="card" data-title="Confusion, Doubt & Overload" data-text="Cognitive Warfare 04 — Inducing confusion, doubt and cognitive overload. cognitiveclarity.vercel.app" data-img="images/cw-04.png">
             <div class="card-img-wrap">
               <span class="card-num">04</span>
-              <img class="card-img" src="images/cw-04.png" alt="Cognitive Warfare 04 — Inducing confusion, doubt, and cognitive overload" loading="lazy" />
+              <a href="images/cw-04.png" target="_blank" rel="noopener" title="Open full size to zoom / save">
+                <img class="card-img" src="images/cw-04.png" alt="Cognitive Warfare 04 — Inducing confusion, doubt, and cognitive overload" loading="lazy" />
+              </a>
             </div>
             <div class="card-body">
               <h3>Confusion, Doubt & Overload</h3>
@@ -246,7 +256,9 @@
           <article class="card" data-title="Polarization & Division" data-text="Cognitive Warfare 05 — Polarization and division amplification. cognitiveclarity.vercel.app" data-img="images/cw-05.png">
             <div class="card-img-wrap">
               <span class="card-num">05</span>
-              <img class="card-img" src="images/cw-05.png" alt="Cognitive Warfare 05 — Polarization and division amplification" loading="lazy" />
+              <a href="images/cw-05.png" target="_blank" rel="noopener" title="Open full size to zoom / save">
+                <img class="card-img" src="images/cw-05.png" alt="Cognitive Warfare 05 — Polarization and division amplification" loading="lazy" />
+              </a>
             </div>
             <div class="card-body">
               <h3>Polarization & Division Amplification</h3>
@@ -267,7 +279,9 @@
           <article class="card" data-title="Historical Memory & Paradigm Shift" data-text="Cognitive Warfare 06 — Historical memory disruption and paradigm shifting. cognitiveclarity.vercel.app" data-img="images/cw-06.png">
             <div class="card-img-wrap">
               <span class="card-num">06</span>
-              <img class="card-img" src="images/cw-06.png" alt="Cognitive Warfare 06 — Historical memory disruption and paradigm shifting" loading="lazy" />
+              <a href="images/cw-06.png" target="_blank" rel="noopener" title="Open full size to zoom / save">
+                <img class="card-img" src="images/cw-06.png" alt="Cognitive Warfare 06 — Historical memory disruption and paradigm shifting" loading="lazy" />
+              </a>
             </div>
             <div class="card-body">
               <h3>Historical Memory & Paradigm Shifting</h3>
@@ -288,7 +302,9 @@
           <article class="card" data-title="Symbol & Identity Deconstruction" data-text="Cognitive Warfare 07 — Symbol and identity deconstruction. cognitiveclarity.vercel.app" data-img="images/cw-07.png">
             <div class="card-img-wrap">
               <span class="card-num">07</span>
-              <img class="card-img" src="images/cw-07.png" alt="Cognitive Warfare 07 — Symbol and identity deconstruction" loading="lazy" />
+              <a href="images/cw-07.png" target="_blank" rel="noopener" title="Open full size to zoom / save">
+                <img class="card-img" src="images/cw-07.png" alt="Cognitive Warfare 07 — Symbol and identity deconstruction" loading="lazy" />
+              </a>
             </div>
             <div class="card-body">
               <h3>Symbol & Identity Deconstruction</h3>
@@ -309,7 +325,9 @@
           <article class="card" data-title="Reflexive Control & Premise-Setting" data-text="Cognitive Warfare 08 — Reflexive control and premise-setting. cognitiveclarity.vercel.app" data-img="images/cw-08.png">
             <div class="card-img-wrap">
               <span class="card-num">08</span>
-              <img class="card-img" src="images/cw-08.png" alt="Cognitive Warfare 08 — Reflexive control and premise-setting" loading="lazy" />
+              <a href="images/cw-08.png" target="_blank" rel="noopener" title="Open full size to zoom / save">
+                <img class="card-img" src="images/cw-08.png" alt="Cognitive Warfare 08 — Reflexive control and premise-setting" loading="lazy" />
+              </a>
             </div>
             <div class="card-body">
               <h3>Reflexive Control & Premise-Setting</h3>
@@ -330,7 +348,9 @@
           <article class="card" data-title="Technology-Enabled Scaling" data-text="Cognitive Warfare 09 — Technology-enabled scaling and personalization. cognitiveclarity.vercel.app" data-img="images/cw-09.png">
             <div class="card-img-wrap">
               <span class="card-num">09</span>
-              <img class="card-img" src="images/cw-09.png" alt="Cognitive Warfare 09 — Technology-enabled scaling and personalization" loading="lazy" />
+              <a href="images/cw-09.png" target="_blank" rel="noopener" title="Open full size to zoom / save">
+                <img class="card-img" src="images/cw-09.png" alt="Cognitive Warfare 09 — Technology-enabled scaling and personalization" loading="lazy" />
+              </a>
             </div>
             <div class="card-body">
               <h3>Technology-Enabled Scaling & Personalization</h3>
@@ -351,7 +371,9 @@
           <article class="card" data-title="Chinese PLA Cognitive Domain Operations" data-text="Cognitive Warfare 10 — Chinese PLA writings on cognitive domain operations. cognitiveclarity.vercel.app" data-img="images/cw-10.png">
             <div class="card-img-wrap">
               <span class="card-num">10</span>
-              <img class="card-img" src="images/cw-10.png" alt="Cognitive Warfare 10 — Chinese PLA writings on cognitive domain operations" loading="lazy" />
+              <a href="images/cw-10.png" target="_blank" rel="noopener" title="Open full size to zoom / save">
+                <img class="card-img" src="images/cw-10.png" alt="Cognitive Warfare 10 — Chinese PLA writings on cognitive domain operations" loading="lazy" />
+              </a>
             </div>
             <div class="card-body">
               <h3>Chinese PLA Cognitive Domain Operations</h3>
@@ -372,7 +394,9 @@
           <article class="card" data-title="External Actors" data-text="Cognitive Warfare 11 — External actors. cognitiveclarity.vercel.app" data-img="images/cw-11.png">
             <div class="card-img-wrap">
               <span class="card-num">11</span>
-              <img class="card-img" src="images/cw-11.png" alt="Cognitive Warfare 11 — External actors" loading="lazy" />
+              <a href="images/cw-11.png" target="_blank" rel="noopener" title="Open full size to zoom / save">
+                <img class="card-img" src="images/cw-11.png" alt="Cognitive Warfare 11 — External actors" loading="lazy" />
+              </a>
             </div>
             <div class="card-body">
               <h3>External Actors</h3>
@@ -393,7 +417,9 @@
           <article class="card" data-title="A Leader Protecting Their Population" data-text="Cognitive Warfare 12 — A leader protecting their own population. cognitiveclarity.vercel.app" data-img="images/cw-12.png">
             <div class="card-img-wrap">
               <span class="card-num">12</span>
-              <img class="card-img" src="images/cw-12.png" alt="Cognitive Warfare 12 — A leader protecting their own population" loading="lazy" />
+              <a href="images/cw-12.png" target="_blank" rel="noopener" title="Open full size to zoom / save">
+                <img class="card-img" src="images/cw-12.png" alt="Cognitive Warfare 12 — A leader protecting their own population" loading="lazy" />
+              </a>
             </div>
             <div class="card-body">
               <h3>A Leader Protecting Their Population</h3>
@@ -414,7 +440,9 @@
           <article class="card" data-title="Defensive Posture" data-text="Cognitive Warfare 13 — Defensive posture. How to protect, strengthen and prune the mind. cognitiveclarity.vercel.app" data-img="images/cw-13.png">
             <div class="card-img-wrap">
               <span class="card-num">13</span>
-              <img class="card-img" src="images/cw-13.png" alt="Cognitive Warfare 13 — Defensive posture" loading="lazy" />
+              <a href="images/cw-13.png" target="_blank" rel="noopener" title="Open full size to zoom / save">
+                <img class="card-img" src="images/cw-13.png" alt="Cognitive Warfare 13 — Defensive posture" loading="lazy" />
+              </a>
             </div>
             <div class="card-body">
               <h3>Defensive Posture</h3>
