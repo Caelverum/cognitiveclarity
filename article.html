@@ -1,1 +1,153 @@
-PLACEHOLDER_FOR_FULL_CONTENT
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cognitive Warfare — What It Is, How It Works, and How to Defend Against It | Cognitive Clarity</title>
+  <meta name="description" content="Cognitive warfare is the deliberate contest over human cognition—how people perceive, orient, decide, and act—to gain strategic advantage. A clear explanation of the domain, core tactics, and defensive posture." />
+  <link rel="canonical" href="https://cognitiveclarity.vercel.app/article.html" />
+  <meta property="og:title" content="Cognitive Warfare — What It Is, How It Works, and How to Defend Against It" />
+  <meta property="og:description" content="Cognitive warfare is the deliberate contest over human cognition—how people perceive, orient, decide, and act—to gain strategic advantage." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://cognitiveclarity.vercel.app/article.html" />
+  <meta property="og:image" content="https://raw.githubusercontent.com/Caelverum/cognitiveclarity/main/images/cw-01.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Cognitive Warfare — What It Is, How It Works, and How to Defend Against It" />
+  <meta name="twitter:description" content="A clear explanation of cognitive warfare, its tactics, and how individuals and societies can build resilience." />
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/Caelverum/cognitiveclarity/main/images/cw-01.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root { --bg:#070b12; --bg-card:#0f1623; --bg-elevated:#151d2e; --border:#1e2a3f; --text:#e8eef8; --text-muted:#8b9bb8; --accent:#3b82f6; --gold:#f0c14b; --prose:#d1d9e6; }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { font-family:'Inter',system-ui,sans-serif; background:var(--bg); color:var(--text); line-height:1.7; min-height:100vh; background-image:radial-gradient(ellipse 80% 50% at 50% -20%,rgba(59,130,246,0.12),transparent); }
+    a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:underline; }
+    .container { max-width:720px; margin:0 auto; padding:0 1.35rem; }
+    header { position:sticky; top:0; z-index:50; background:rgba(7,11,18,0.9); backdrop-filter:blur(12px); border-bottom:1px solid var(--border); }
+    .nav { display:flex; align-items:center; justify-content:space-between; height:60px; max-width:1100px; margin:0 auto; padding:0 1.25rem; }
+    .logo { font-weight:800; font-size:1.1rem; letter-spacing:-0.02em; }
+    .logo span { color:var(--gold); }
+    .nav-links a { color:var(--text-muted); font-size:0.9rem; font-weight:500; margin-left:1.25rem; }
+    .nav-links a:hover { color:var(--text); text-decoration:none; }
+    .article-header { padding:3.5rem 0 2rem; text-align:center; border-bottom:1px solid var(--border); margin-bottom:2.5rem; }
+    .article-header .eyebrow { display:inline-block; font-size:0.8rem; font-weight:600; color:var(--gold); letter-spacing:0.04em; text-transform:uppercase; margin-bottom:1rem; }
+    .article-header h1 { font-family:'Playfair Display',serif; font-size:clamp(1.9rem,5vw,2.6rem); font-weight:700; line-height:1.25; margin-bottom:1rem; letter-spacing:-0.02em; }
+    .article-header .dek { font-size:1.1rem; color:var(--text-muted); max-width:540px; margin:0 auto 1.75rem; line-height:1.55; }
+    .share-bar { display:flex; flex-wrap:wrap; gap:0.4rem; justify-content:center; }
+    .share-btn { display:inline-flex; align-items:center; gap:0.3rem; padding:0.45rem 0.85rem; border-radius:8px; font-size:0.78rem; font-weight:600; border:1px solid var(--border); background:var(--bg-elevated); color:var(--text); cursor:pointer; transition:background 0.15s; text-decoration:none; }
+    .share-btn:hover { background:#1c2a42; text-decoration:none; }
+    .share-btn.primary { background:var(--accent); border-color:var(--accent); color:white; }
+    .share-btn.primary:hover { background:#2563eb; }
+    article { padding-bottom:4rem; }
+    .prose h2 { font-family:'Playfair Display',serif; font-size:1.45rem; font-weight:700; margin:2.75rem 0 1rem; line-height:1.3; color:var(--text); }
+    .prose p { font-size:1.05rem; color:var(--prose); margin-bottom:1.15rem; }
+    .prose ul { margin:0.75rem 0 1.5rem 1.4rem; color:var(--prose); }
+    .prose li { margin-bottom:0.65rem; font-size:1.02rem; line-height:1.6; }
+    .prose strong { color:var(--text); font-weight:600; }
+    .prose em { font-style:italic; }
+    .callout { background:var(--bg-card); border:1px solid var(--border); border-left:3px solid var(--gold); border-radius:0 12px 12px 0; padding:1.25rem 1.35rem; margin:2rem 0; }
+    .callout p { margin-bottom:0; font-size:1.02rem; }
+    .download-box { background:var(--bg-card); border:1px solid var(--border); border-radius:14px; padding:1.5rem; margin:3rem 0 2rem; text-align:center; }
+    .download-box h3 { font-size:1.05rem; margin-bottom:0.5rem; }
+    .download-box p { font-size:0.9rem; color:var(--text-muted); margin-bottom:1rem; }
+    footer { border-top:1px solid var(--border); padding:2rem 0; text-align:center; color:var(--text-muted); font-size:0.82rem; }
+    footer a { color:var(--text-muted); }
+    .toast { position:fixed; bottom:1.5rem; left:50%; transform:translateX(-50%) translateY(100px); background:#1e293b; color:white; padding:0.7rem 1.2rem; border-radius:10px; font-size:0.88rem; font-weight:500; box-shadow:0 8px 30px rgba(0,0,0,0.4); opacity:0; transition:all 0.3s ease; z-index:100; }
+    .toast.show { transform:translateX(-50%) translateY(0); opacity:1; }
+    @media (max-width:640px) { .nav-links { display:none; } .article-header { padding:2.5rem 0 1.5rem; } .prose p, .prose li { font-size:1rem; } }
+    @media print { header, .share-bar, .download-box, footer, .toast { display:none !important; } body { background:white; color:#111; } .prose p, .prose li { color:#222; } .container { max-width:100%; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <a href="/" class="logo">Cognitive <span>Clarity</span></a>
+      <nav class="nav-links">
+        <a href="/">Home</a>
+        <a href="/#gallery">The Series</a>
+        <a href="/article.html">Full Article</a>
+      </nav>
+    </div>
+  </header>
+  <div class="container">
+    <header class="article-header">
+      <div class="eyebrow">Cognitive Clarity</div>
+      <h1>Cognitive Warfare</h1>
+      <p class="dek">What it is, how it differs from related concepts, the core tactics observed in open-source analyses, and the defensive posture required to protect decision quality.</p>
+      <div class="share-bar">
+        <button class="share-btn primary" onclick="shareArticle()">Share</button>
+        <a class="share-btn" href="#" onclick="shareTo('x'); return false;">𝕏</a>
+        <a class="share-btn" href="#" onclick="shareTo('fb'); return false;">Facebook</a>
+        <a class="share-btn" href="#" onclick="shareTo('li'); return false;">LinkedIn</a>
+        <a class="share-btn" href="#" onclick="shareTo('email'); return false;">Email</a>
+        <button class="share-btn" onclick="copyLink()">Copy link</button>
+        <button class="share-btn" onclick="window.print()">Print / PDF</button>
+      </div>
+    </header>
+    <article class="prose">
+      <p><strong>Cognitive warfare</strong> is the deliberate contest over human (and increasingly machine-augmented) cognition—how people perceive, orient, decide, and act—to gain strategic advantage. NATO frames it as the fight for <em>cognitive superiority</em>: synchronized military and non-military activities across the continuum of competition designed to gain, maintain, or protect advantage in decision-making.</p>
+      <p>It targets the mind itself rather than solely platforms or messages. The goal is often to shape or degrade an adversary’s (or a population’s) reasoning, will, and capacity to act effectively—frequently below the threshold of open conflict and with lower physical cost than conventional force.</p>
+      <h2>How it differs from related concepts</h2>
+      <p>Traditional <strong>psychological operations (PsyOps)</strong> focus on planned communication to influence specific audiences’ perceptions, attitudes, and behavior toward defined military or political objectives. <strong>Information operations (InfoOps)</strong> coordinate information activities to affect will, understanding, and capability. <strong>Cyber operations</strong> primarily target systems and data.</p>
+      <p>Cognitive warfare sits above and across these. It converges them with behavioral science, neuroscience insights, AI, social media dynamics, and other tools. The emphasis shifts from delivering content to altering the cognitive processes that process that content—exploiting biases, disrupting the OODA loop (especially the “orient” phase), inducing confusion or exhaustion, or rewriting mental models. Effects can be individual, group, or societal and often persist or compound over time.</p>
+      <h2>Core tactics and approaches (open-source characterizations)</h2>
+      <p>These are drawn from military analyses (NATO, Russian practice, PLA writings). They are high-level patterns observed in state competition, not operational manuals.</p>
+      <ul>
+        <li><strong>Perception and narrative manipulation</strong>: Systematic shaping of how events, intentions, and realities are framed. This includes selective truths, partial truths, conflicting narratives, and amplification of preferred stories across platforms. The aim is not always to plant a single lie but to make coherent understanding difficult or to establish premises that lead targets to favorable conclusions.</li>
+        <li><strong>Inducing confusion, doubt, and cognitive overload</strong>: Flooding the information space so that people become unsure what is true, exhausted by volume, or default to emotional/heuristic processing. This degrades decision quality and will to act. Related techniques include the “firehose of falsehood” style of high-volume, multi-channel messaging.</li>
+        <li><strong>Polarization and division amplification</strong>: Identifying and intensifying existing social, ethnic, political, or identity fault lines so that a population spends energy on internal conflict rather than coherent response to external pressure. This makes societies less resilient and leadership more constrained.</li>
+        <li><strong>Historical memory disruption and paradigm shifting</strong>: Efforts to weaken or rewrite shared historical narratives and cultural reference points so that populations become more open to new values or less attached to prior identities and institutions. Elite targeting (academia, media, influencers, policymakers) is often prioritized to change the “paradigm of thinking” at influential nodes.</li>
+        <li><strong>Symbol and identity deconstruction</strong>: Challenging or redefining national, cultural, or institutional symbols to erode cohesion and legitimacy.</li>
+        <li><strong>Reflexive control and premise-setting</strong> (prominent in Russian doctrine): Transferring the basis for decision-making so that the target adopts the adversary’s framing and then reasons “rationally” to outcomes that serve the adversary. This integrates messaging with economic, diplomatic, military, and other actions.</li>
+        <li><strong>Technology-enabled scaling and personalization</strong>: AI-generated content, deepfakes, automated accounts, microtargeting based on behavioral data, algorithmic amplification, and analysis of psychological profiles. Social media becomes a primary delivery and feedback mechanism. Emerging discussions also include interest in neuroscience and “cognitive domain” technologies, though practical large-scale application remains contested and constrained.</li>
+      </ul>
+      <p>Chinese PLA writings on “cognitive domain operations” (认知域作战) have described four tactics for “mind superiority”: perception manipulation through propaganda narratives; cutting off historical memory; changing the paradigm of thinking (often via elites); and deconstructing symbols. These sit alongside the older “Three Warfares” (public opinion, psychological, and legal warfare) and are viewed as applicable in both peacetime and wartime.</p>
+      <h2>Strategic logic and connection to your earlier point</h2>
+      <p>External actors have strong incentives to increase the confusion and unawareness of another society’s non-players—the people not actively tracking power competition. A population that cannot reliably orient itself is slower to coordinate, more susceptible to simplified or emotionally charged stories, more divided, and less able to impose costs on the external actor. This creates asymmetric advantage without requiring kinetic superiority.</p>
+      <div class="callout">
+        <p>A leader protecting their own population therefore treats the cognitive environment as a domain that must be defended—similar to territory, currency, or critical infrastructure. Allowing sustained degradation of public sense-making is a form of strategic negligence. At the same time, the same tools can be (and are) used domestically by rulers against their own populations, which creates ethical and practical tension: the utility of confusion versus the long-term costs of cultivating incapacity.</p>
+      </div>
+      <h2>Defensive posture</h2>
+      <p>Open analyses emphasize building cognitive resilience rather than pure information control: improving situational awareness and sense-making speed, rapid authoritative clarification of contested events, media and digital literacy at scale, institutional credibility (so truth has a trusted carrier), whole-of-society coordination, and the ability to recover performance after disruption. Cognitive superiority includes both degrading an adversary’s influence <em>and</em> protecting and enhancing one’s own decision quality.</p>
+      <p>The domain is contested, attribution is often difficult, effects can be cumulative and hard to measure in real time, and open societies face inherent tensions between openness and resilience. The underlying reality remains: differential clarity of perception and decision quality produces power advantages, whether the actors involved acknowledge the language of “cognitive warfare” or not.</p>
+      <div class="download-box">
+        <h3>Save or share this article</h3>
+        <p>Use the buttons above, print to PDF, or copy the link to send to others.</p>
+        <div class="share-bar" style="justify-content:center;">
+          <button class="share-btn primary" onclick="shareArticle()">Share article</button>
+          <button class="share-btn" onclick="window.print()">Print / Save as PDF</button>
+          <button class="share-btn" onclick="copyLink()">Copy link</button>
+          <a class="share-btn" href="/">Back to series</a>
+        </div>
+      </div>
+    </article>
+  </div>
+  <footer>
+    <div class="container">
+      <p><a href="/">Cognitive Clarity</a> · Protect · Strengthen · Prune</p>
+      <p style="margin-top:0.4rem; font-size:0.78rem;">Built for those who refuse to outsource their thinking.</p>
+    </div>
+  </footer>
+  <div class="toast" id="toast"></div>
+  <script>
+    const ARTICLE_URL = 'https://cognitiveclarity.vercel.app/article.html';
+    const ARTICLE_TITLE = 'Cognitive Warfare — What It Is, How It Works, and How to Defend Against It';
+    const ARTICLE_TEXT = 'Cognitive warfare is the deliberate contest over human cognition—how people perceive, orient, decide, and act—to gain strategic advantage. Read the full article:';
+    function showToast(msg) { const t = document.getElementById('toast'); t.textContent = msg; t.classList.add('show'); setTimeout(() => t.classList.remove('show'), 2200); }
+    async function shareArticle() {
+      if (navigator.share) { try { await navigator.share({ title: ARTICLE_TITLE, text: ARTICLE_TEXT, url: ARTICLE_URL }); return; } catch (e) {} }
+      await navigator.clipboard.writeText(ARTICLE_TEXT + '\n\n' + ARTICLE_URL); showToast('Copied — paste anywhere');
+    }
+    function shareTo(platform) {
+      const text = encodeURIComponent(ARTICLE_TEXT); const url = encodeURIComponent(ARTICLE_URL); let link = '';
+      if (platform === 'x') link = `https://twitter.com/intent/tweet?text=${text}&url=${url}`;
+      else if (platform === 'fb') link = `https://www.facebook.com/sharer/sharer.php?u=${url}&quote=${text}`;
+      else if (platform === 'li') link = `https://www.linkedin.com/sharing/share-offsite/?url=${url}`;
+      else if (platform === 'email') link = `mailto:?subject=${encodeURIComponent(ARTICLE_TITLE)}&body=${text}%0A%0A${url}`;
+      if (link) window.open(link, '_blank', 'noopener,noreferrer,width=600,height=500');
+    }
+    async function copyLink() { await navigator.clipboard.writeText(ARTICLE_URL); showToast('Link copied'); }
+  </script>
+</body>
+</html>
